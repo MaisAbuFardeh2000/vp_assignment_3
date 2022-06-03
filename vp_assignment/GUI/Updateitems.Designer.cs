@@ -178,6 +178,7 @@
             this.btnhadditem.TabIndex = 25;
             this.btnhadditem.Text = "Home";
             this.btnhadditem.UseVisualStyleBackColor = true;
+            this.btnhadditem.Click += new System.EventHandler(this.btnhadditem_Click);
             // 
             // frmupdateitems
             // 

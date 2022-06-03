@@ -76,7 +76,9 @@ namespace vp_assignment
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-           
+            frmupdateitems frm = new frmupdateitems();
+            this.Hide();
+            frm.ShowDialog();
 
         }
     }

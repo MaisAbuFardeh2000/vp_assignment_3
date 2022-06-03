@@ -33,5 +33,12 @@ namespace vp_assignment
         {
 
         }
+
+        private void btnhadditem_Click(object sender, EventArgs e)
+        {
+            Dashbord frm = new Dashbord();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }
