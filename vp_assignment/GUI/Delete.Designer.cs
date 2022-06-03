@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmdeleteitems));
             this.lbldeleteitems = new System.Windows.Forms.Label();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.lblitemname = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnhadditem = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,18 +79,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(682, 248);
             this.dataGridView1.TabIndex = 5;
             // 
+            // btnhadditem
+            // 
+            this.btnhadditem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnhadditem.BackgroundImage")));
+            this.btnhadditem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnhadditem.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhadditem.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btnhadditem.Image = ((System.Drawing.Image)(resources.GetObject("btnhadditem.Image")));
+            this.btnhadditem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnhadditem.Location = new System.Drawing.Point(40, 499);
+            this.btnhadditem.Name = "btnhadditem";
+            this.btnhadditem.Size = new System.Drawing.Size(88, 33);
+            this.btnhadditem.TabIndex = 25;
+            this.btnhadditem.Text = "Home";
+            this.btnhadditem.UseVisualStyleBackColor = true;
+            this.btnhadditem.Click += new System.EventHandler(this.btnhadditem_Click);
+            // 
             // frmdeleteitems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(770, 553);
+            this.Controls.Add(this.btnhadditem);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.lblitemname);
             this.Controls.Add(this.lbldeleteitems);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmdeleteitems";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Deleteitems";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -102,5 +122,6 @@
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Label lblitemname;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnhadditem;
     }
 }

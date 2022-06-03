@@ -87,6 +87,7 @@
             this.btnRemoveItems.TabIndex = 7;
             this.btnRemoveItems.Text = "Remove Items";
             this.btnRemoveItems.UseVisualStyleBackColor = false;
+            this.btnRemoveItems.Click += new System.EventHandler(this.btnRemoveItems_Click);
             // 
             // btnUpdate
             // 
@@ -196,6 +197,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashbord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashbord";
             this.Load += new System.EventHandler(this.Dashbord_Load);
             this.panel1.ResumeLayout(false);

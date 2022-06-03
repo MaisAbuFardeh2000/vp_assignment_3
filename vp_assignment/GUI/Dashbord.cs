@@ -81,5 +81,12 @@ namespace vp_assignment
             frm.ShowDialog();
 
         }
+
+        private void btnRemoveItems_Click(object sender, EventArgs e)
+        {
+            frmdeleteitems frm = new frmdeleteitems();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }

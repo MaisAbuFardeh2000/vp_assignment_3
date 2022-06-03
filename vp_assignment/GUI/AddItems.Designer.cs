@@ -182,6 +182,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddItems";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddItems";
             this.Load += new System.EventHandler(this.AddItems_Load);
             this.ResumeLayout(false);
