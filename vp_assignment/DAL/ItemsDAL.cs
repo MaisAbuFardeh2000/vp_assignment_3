@@ -34,6 +34,7 @@ namespace vp_assignment.DAL
             command.ExecuteNonQuery();
             conn.Close();
         }
+
         public static void DeleteCommand(Items item)
         {
             string DeleteCommand = string.Format("Delete from Items where itemId = {0}", item.itemId);

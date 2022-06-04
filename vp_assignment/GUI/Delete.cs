@@ -31,9 +31,8 @@ namespace vp_assignment
         private void btnDelete_Click(object sender, EventArgs e)
         {
             ItemsDAL.DeleteCommand(currentOrder);
-
-            MessageBox.Show("Item Successfully Deleted");
             RefreshdataGridView();
+            MessageBox.Show("Item Successfully Deleted");
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

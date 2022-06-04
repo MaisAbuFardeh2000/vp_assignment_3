@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPlaceOrder));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblplace = new System.Windows.Forms.Label();
             this.lblcategory = new System.Windows.Forms.Label();
             this.cbcategory = new System.Windows.Forms.ComboBox();
-            this.txtsearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnaddtocart = new System.Windows.Forms.Button();
             this.numquantityupdown = new System.Windows.Forms.NumericUpDown();
@@ -98,15 +97,6 @@
             this.cbcategory.Size = new System.Drawing.Size(142, 26);
             this.cbcategory.TabIndex = 3;
             this.cbcategory.SelectedIndexChanged += new System.EventHandler(this.cbcategory_SelectedIndexChanged);
-            // 
-            // txtsearch
-            // 
-            this.txtsearch.ForeColor = System.Drawing.Color.Black;
-            this.txtsearch.Location = new System.Drawing.Point(26, 161);
-            this.txtsearch.Multiline = true;
-            this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(110, 33);
-            this.txtsearch.TabIndex = 4;
             // 
             // panel1
             // 
@@ -241,45 +231,45 @@
             // 
             // Column1
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column1.HeaderText = "Item Name";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column2.HeaderText = "Unit price";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column3.HeaderText = "Quantity";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column4.HeaderText = "Price";
             this.Column4.Name = "Column4";
             // 
@@ -359,7 +349,7 @@
             this.btnsearch.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnsearch.Image = ((System.Drawing.Image)(resources.GetObject("btnsearch.Image")));
             this.btnsearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsearch.Location = new System.Drawing.Point(142, 161);
+            this.btnsearch.Location = new System.Drawing.Point(26, 163);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(93, 33);
             this.btnsearch.TabIndex = 29;
@@ -393,7 +383,6 @@
             this.Controls.Add(this.btnhadditem);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.cbcategory);
             this.Controls.Add(this.lblcategory);
             this.Controls.Add(this.lblplace);
@@ -417,7 +406,6 @@
         private System.Windows.Forms.Label lblplace;
         private System.Windows.Forms.Label lblcategory;
         private System.Windows.Forms.ComboBox cbcategory;
-        private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblitem;
         private System.Windows.Forms.Label lblquantity;

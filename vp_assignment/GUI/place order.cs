@@ -106,9 +106,9 @@ namespace vp_assignment
             
             currentOrder = new Items();
             DataGridViewRow row = new DataGridViewRow();
-            row = dataGridView1.Rows[e.RowIndex];
-            currentOrder.ItemName = row.Cells[1].Value.ToString();
-            currentOrder.price = double.Parse(row.Cells[3].Value.ToString());
+            row = dataGridView2.Rows[e.RowIndex];
+            currentOrder.ItemName = row.Cells[0].Value.ToString();
+            currentOrder.price = double.Parse(row.Cells[1].Value.ToString());
 
 
             txtitemname.Text = currentOrder.ItemName;
