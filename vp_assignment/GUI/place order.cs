@@ -209,6 +209,11 @@ namespace vp_assignment
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void txtitemname_TextChanged(object sender, EventArgs e)
         {
 

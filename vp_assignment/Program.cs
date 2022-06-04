@@ -16,7 +16,7 @@ namespace vp_assignment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPlaceOrder());
+            Application.Run(new Login ());
         }
     }
 }

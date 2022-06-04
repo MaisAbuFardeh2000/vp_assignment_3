@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPlaceOrder));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblplace = new System.Windows.Forms.Label();
             this.lblcategory = new System.Windows.Forms.Label();
             this.cbcategory = new System.Windows.Forms.ComboBox();
@@ -58,6 +58,7 @@
             this.lbltotalamount = new System.Windows.Forms.Label();
             this.btnsearch = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numquantityupdown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -110,7 +111,7 @@
             this.panel1.Controls.Add(this.lblquantity);
             this.panel1.Controls.Add(this.lblprice);
             this.panel1.Controls.Add(this.lbltotal);
-            this.panel1.Location = new System.Drawing.Point(241, 27);
+            this.panel1.Location = new System.Drawing.Point(230, 45);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(513, 218);
             this.panel1.TabIndex = 6;
@@ -226,7 +227,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(262, 251);
+            this.dataGridView1.Location = new System.Drawing.Point(262, 269);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(444, 201);
             this.dataGridView1.TabIndex = 7;
@@ -235,45 +236,45 @@
             // 
             // Column1
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column1.HeaderText = "Item Name";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column2.HeaderText = "Unit price";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column3.HeaderText = "Quantity";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column4.HeaderText = "Price";
             this.Column4.Name = "Column4";
             // 
@@ -328,7 +329,7 @@
             this.lblgrandtotal.AutoSize = true;
             this.lblgrandtotal.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgrandtotal.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lblgrandtotal.Location = new System.Drawing.Point(446, 455);
+            this.lblgrandtotal.Location = new System.Drawing.Point(444, 473);
             this.lblgrandtotal.Name = "lblgrandtotal";
             this.lblgrandtotal.Size = new System.Drawing.Size(98, 23);
             this.lblgrandtotal.TabIndex = 27;
@@ -372,12 +373,26 @@
             this.dataGridView2.TabIndex = 30;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Bisque;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(745, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(38, 38);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmPlaceOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(786, 592);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.lbltotalamount);
@@ -432,5 +447,6 @@
         private System.Windows.Forms.Label lbltotalamount;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button button1;
     }
 }

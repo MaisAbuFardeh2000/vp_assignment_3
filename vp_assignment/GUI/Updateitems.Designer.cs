@@ -39,6 +39,7 @@
             this.lblcategory = new System.Windows.Forms.Label();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btnhadditem = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,7 +136,7 @@
             this.btnupdate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.btnupdate.Image = ((System.Drawing.Image)(resources.GetObject("btnupdate.Image")));
             this.btnupdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnupdate.Location = new System.Drawing.Point(452, 455);
+            this.btnupdate.Location = new System.Drawing.Point(452, 473);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(145, 39);
             this.btnupdate.TabIndex = 14;
@@ -159,12 +160,26 @@
             this.btnhadditem.UseVisualStyleBackColor = true;
             this.btnhadditem.Click += new System.EventHandler(this.btnhadditem_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Bisque;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(720, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(38, 38);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmupdateitems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(770, 553);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnhadditem);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.txtprice);
@@ -198,5 +213,6 @@
         private System.Windows.Forms.Label lblcategory;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btnhadditem;
+        private System.Windows.Forms.Button button1;
     }
 }
