@@ -21,7 +21,7 @@ namespace vp_assignment
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = ItemsDAL.GetAllcommand();
+            RefreshdataGridView();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -54,8 +54,6 @@ namespace vp_assignment
             txtcategory.Text = currentOrder.Category;
             txtprice.Text = currentOrder.price.ToString();
             txtsearchitem.Text = currentOrder.ItemName;
-
-
         }
 
         Items currentOrder;
@@ -65,14 +63,25 @@ namespace vp_assignment
         {
 
             currentOrder = new Items();
-
                 currentOrder.ItemName = txtsearchitem.Text;
                 currentOrder.Category = txtcategory.Text;
                 currentOrder.price = double.Parse(txtprice.Text);
                 
                 ItemsDAL.InsertCommand(currentOrder);
                 MessageBox.Show("Order seccessfully added");
-            
+            RefreshdataGridView();
+            txtcategory.Text = "";
+            txtprice.Text = "";
+            txtsearchitem.Text = "";
+        }
+        private void RefreshdataGridView()
+        {
+            dataGridView1.DataSource = ItemsDAL.GetAllcommand();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

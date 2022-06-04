@@ -103,6 +103,7 @@ namespace vp_assignment
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             currentOrder = new Items();
             DataGridViewRow row = new DataGridViewRow();
             row = dataGridView1.Rows[e.RowIndex];
