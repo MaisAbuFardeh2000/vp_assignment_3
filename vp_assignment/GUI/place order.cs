@@ -108,7 +108,6 @@ namespace vp_assignment
             row = dataGridView1.Rows[e.RowIndex];
             currentOrder.ItemName = row.Cells[1].Value.ToString();
             currentOrder.price = double.Parse(row.Cells[3].Value.ToString());
-            currentOrder.Category = (row.Cells[2].Value.ToString());
 
 
             txtitemname.Text = currentOrder.ItemName;
@@ -126,7 +125,7 @@ namespace vp_assignment
             {
                 conn.Open();
 
-                string commandText = "Select ItemName,price from Items='" + cbcategory.SelectedItem.ToString() + "'";
+                string commandText = "Select ItemName,price from Items where Category='" + cbcategory.SelectedItem.ToString() + "'";
                 OleDbDataAdapter da = new OleDbDataAdapter(commandText, conn);
                 OleDbCommandBuilder builder = new OleDbCommandBuilder(da);
                 var dt = new DataSet();
