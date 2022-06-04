@@ -31,8 +31,12 @@ namespace vp_assignment
                 Dashbord ds = new Dashbord();
                 ds.Show();
                 this.Hide();
-
-
+            }
+            else if(txtUserName.Text == "admin" && txtPassword.Text == "admin")
+            {
+                Dashbord ds = new Dashbord();
+                ds.Show();
+                this.Hide();
             }
             else
             {
