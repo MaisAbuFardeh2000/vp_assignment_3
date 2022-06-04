@@ -140,5 +140,42 @@ namespace vp_assignment
             }
 
         }
+        protected int n, total = 0;
+        private void btnaddtocart_Click(object sender, EventArgs e)
+        {
+            if (txttotal.Text != "0" && txttotal.Text != "")
+            {
+                n = dataGridView1.Rows.Add();
+                dataGridView1.Rows[n].Cells[0].Value = txtitemname.Text;
+                dataGridView1.Rows[n].Cells[1].Value = txtprice.Text;
+                dataGridView1.Rows[n].Cells[2].Value = numquantityupdown.Text;
+                dataGridView1.Rows[n].Cells[3].Value = txttotal.Text;
+
+                total += int.Parse(txttotal.Text);
+                lbltotalamount.Text = "JD" + total;
+            }
+            else
+            {
+                MessageBox.Show("Minimum Quantity need to be ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+         
+
+
+        }
+
+        private void numquantityupdown_ValueChanged(object sender, EventArgs e)
+        {
+            Int64 quan = Int64.Parse(numquantityupdown.Value.ToString());
+            Int64 price = Int64.Parse(txtprice.Text);
+            txttotal.Text = (quan * price).ToString();
+
+
+        }
+
+        private void txtitemname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

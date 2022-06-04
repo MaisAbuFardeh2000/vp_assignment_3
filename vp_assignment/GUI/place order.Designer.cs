@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPlaceOrder));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblplace = new System.Windows.Forms.Label();
             this.lblcategory = new System.Windows.Forms.Label();
             this.cbcategory = new System.Windows.Forms.ComboBox();
@@ -128,6 +128,7 @@
             this.btnaddtocart.TabIndex = 11;
             this.btnaddtocart.Text = "Add to Cart";
             this.btnaddtocart.UseVisualStyleBackColor = true;
+            this.btnaddtocart.Click += new System.EventHandler(this.btnaddtocart_Click);
             // 
             // numquantityupdown
             // 
@@ -136,6 +137,7 @@
             this.numquantityupdown.Name = "numquantityupdown";
             this.numquantityupdown.Size = new System.Drawing.Size(169, 29);
             this.numquantityupdown.TabIndex = 10;
+            this.numquantityupdown.ValueChanged += new System.EventHandler(this.numquantityupdown_ValueChanged);
             // 
             // txttotal
             // 
@@ -167,6 +169,7 @@
             this.txtitemname.ReadOnly = true;
             this.txtitemname.Size = new System.Drawing.Size(158, 30);
             this.txtitemname.TabIndex = 7;
+            this.txtitemname.TextChanged += new System.EventHandler(this.txtitemname_TextChanged);
             // 
             // lblitem
             // 
@@ -231,45 +234,45 @@
             // 
             // Column1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column1.HeaderText = "Item Name";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column2.HeaderText = "Unit price";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle11;
             this.Column3.HeaderText = "Quantity";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Moccasin;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SaddleBrown;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Moccasin;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Moccasin;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SaddleBrown;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Moccasin;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column4.HeaderText = "Price";
             this.Column4.Name = "Column4";
             // 
