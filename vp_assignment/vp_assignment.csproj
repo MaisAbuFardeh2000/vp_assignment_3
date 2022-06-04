@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\ItemsDAL.cs" />
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="Entity\Items.cs" />
     <Compile Include="GUI\Delete.cs">
       <SubType>Form</SubType>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DGVPrinterHelper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -53,6 +54,21 @@ namespace vp_assignment
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Customer Bill";
+            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.Footer = "Total Payable Amount : " + lbltotalamount.Text;
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridView1);
+
+            total = 0;
+            dataGridView1.Rows.Clear();
+            lbltotalamount.Text = "JD " + total;
 
         }
 
@@ -69,7 +85,13 @@ namespace vp_assignment
 
         private void btnremove_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                dataGridView1.Rows.RemoveAt(this.dataGridView1.SelectedRows[0].Index);
+            }
+            catch { }
+            total -= amount;
+            lbltotalamount.Text = "JD" + total;
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -170,6 +192,20 @@ namespace vp_assignment
             Int64 price = Int64.Parse(txtprice.Text);
             txttotal.Text = (quan * price).ToString();
 
+
+        }
+
+        int amount;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                amount = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString());
+            }
+            catch
+            {
+
+            }
 
         }
 
