@@ -33,10 +33,8 @@
             this.lblitem = new System.Windows.Forms.Label();
             this.txtsearchitem = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblp = new System.Windows.Forms.Label();
             this.txtcategory = new System.Windows.Forms.TextBox();
-            this.lblin = new System.Windows.Forms.Label();
             this.txtprice = new System.Windows.Forms.TextBox();
             this.lblcategory = new System.Windows.Forms.Label();
             this.btnupdate = new System.Windows.Forms.Button();
@@ -59,7 +57,7 @@
             this.lblitem.AutoSize = true;
             this.lblitem.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblitem.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lblitem.Location = new System.Drawing.Point(515, 67);
+            this.lblitem.Location = new System.Drawing.Point(182, 455);
             this.lblitem.Name = "lblitem";
             this.lblitem.Size = new System.Drawing.Size(113, 23);
             this.lblitem.TabIndex = 1;
@@ -69,7 +67,7 @@
             // 
             this.txtsearchitem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsearchitem.ForeColor = System.Drawing.Color.Black;
-            this.txtsearchitem.Location = new System.Drawing.Point(562, 93);
+            this.txtsearchitem.Location = new System.Drawing.Point(210, 482);
             this.txtsearchitem.Multiline = true;
             this.txtsearchitem.Name = "txtsearchitem";
             this.txtsearchitem.Size = new System.Drawing.Size(164, 30);
@@ -85,16 +83,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(682, 203);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(210, 463);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 30);
-            this.textBox1.TabIndex = 5;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // lblp
             // 
@@ -116,18 +105,6 @@
             this.txtcategory.Name = "txtcategory";
             this.txtcategory.Size = new System.Drawing.Size(164, 30);
             this.txtcategory.TabIndex = 7;
-            // 
-            // lblin
-            // 
-            this.lblin.AutoSize = true;
-            this.lblin.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblin.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lblin.Location = new System.Drawing.Point(182, 437);
-            this.lblin.Name = "lblin";
-            this.lblin.Size = new System.Drawing.Size(113, 23);
-            this.lblin.TabIndex = 6;
-            this.lblin.Text = " Items Name";
-            this.lblin.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtprice
             // 
@@ -163,6 +140,7 @@
             this.btnupdate.TabIndex = 14;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btnhadditem
             // 
@@ -191,8 +169,6 @@
             this.Controls.Add(this.txtprice);
             this.Controls.Add(this.lblcategory);
             this.Controls.Add(this.txtcategory);
-            this.Controls.Add(this.lblin);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblp);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtsearchitem);
@@ -215,10 +191,8 @@
         private System.Windows.Forms.Label lblitem;
         private System.Windows.Forms.TextBox txtsearchitem;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblp;
         private System.Windows.Forms.TextBox txtcategory;
-        private System.Windows.Forms.Label lblin;
         private System.Windows.Forms.TextBox txtprice;
         private System.Windows.Forms.Label lblcategory;
         private System.Windows.Forms.Button btnupdate;

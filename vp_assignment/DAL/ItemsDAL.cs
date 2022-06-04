@@ -11,7 +11,7 @@ namespace vp_assignment.DAL
 {
     public static class ItemsDAL
     {
-        private static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\ASUS\\Desktop\\project-master\\project-master\\project\\DataBase\\HomeInventoryUsers.accdb";
+        private static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\ASUS\\Desktop\\Database21.accdb";
         private static OleDbConnection conn = new OleDbConnection(connectionString);
 
         public static void InsertCommand(Items item)
@@ -23,58 +23,39 @@ namespace vp_assignment.DAL
             command.ExecuteNonQuery();
             conn.Close();
         }
-        //    public static void UpdateCommand(Categories category)
-        //    {
-        //        string UpdateCommand = string.Format("Update Categories set CategoryId = '{1}',CategoryName = '{2}'" +
-        //            " where CatID = {0}", category.CatID, category.CategoryId, category.CategoryName);
+        public static void UpdateCommand(Items item)
+        {
+            string UpdateCommand = string.Format("Update Items set ItemName = '{1}',Category = '{2}',price='{3}'" +
+                " where itemId = {0}", item.itemId, item.ItemName, item.Category ,item.price);
 
-        //        OleDbCommand command = new OleDbCommand(UpdateCommand, conn);
+            OleDbCommand command = new OleDbCommand(UpdateCommand, conn);
 
-        //        conn.Open();
-        //        command.ExecuteNonQuery();
-        //        conn.Close();
-        //    }
-        //    public static void DeleteCommand(Categories category)
-        //    {
-        //        string DeleteCommand = string.Format("Delete from Categories where CatID = {0}", category.CatID);
-        //        OleDbCommand command = new OleDbCommand(DeleteCommand, conn);
-        //        conn.Open();
-        //        command.ExecuteNonQuery();
-        //        conn.Close();
-        //    }
-        //    public static DataTable GetAllcommand()
-        //    {
-        //        string commandText = string.Format("Select * from Categories");
+            conn.Open();
+            command.ExecuteNonQuery();
+            conn.Close();
+        }
+        public static void DeleteCommand(Items item)
+        {
+            string DeleteCommand = string.Format("Delete from Items where itemId = {0}", item.itemId);
+            OleDbCommand command = new OleDbCommand(DeleteCommand, conn);
+            conn.Open();
+            command.ExecuteNonQuery();
+            conn.Close();
+        }
 
-        //        OleDbCommand command = new OleDbCommand(commandText, conn);
+        public static DataTable GetAllcommand()
+        {
+            string commandText = string.Format("Select * from Items");
 
-        //        OleDbDataAdapter da = new OleDbDataAdapter(command);
+            OleDbCommand command = new OleDbCommand(commandText, conn);
 
-        //        DataTable dt = new DataTable();
+            OleDbDataAdapter da = new OleDbDataAdapter(command);
 
-        //        da.Fill(dt);
+            DataTable dt = new DataTable();
 
-        //        return dt;
-        //    }
+            da.Fill(dt);
 
-        //}
+            return dt;
+        }
     }
 }
-
-
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using System.Data;
-//using System.Data.OleDb;
-
-//namespace project.Helper
-//{
-//    public static class CategoriesDAL
-//    {
-//        private static string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\ASUS\\Desktop\\project-master\\project-master\\project\\DataBase\\HomeInventoryUsers.accdb";
-//        private static OleDbConnection conn = new OleDbConnection(connectionString);
-//    }
-//}
