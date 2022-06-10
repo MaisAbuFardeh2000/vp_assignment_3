@@ -180,7 +180,10 @@ namespace vp_assignment
             {
                 MessageBox.Show("Minimum Quantity need to be ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
+            txtitemname.Text = "";
+            txtprice.Text = "";
+            numquantityupdown.Text = "0";
+            txttotal.Text = "";
          
 
 

@@ -58,6 +58,5 @@ namespace vp_assignment.DAL
 
             return dt;
         }
-       
     }
 }

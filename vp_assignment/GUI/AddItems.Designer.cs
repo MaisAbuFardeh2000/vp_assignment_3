@@ -106,12 +106,6 @@
             this.cbCtegory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCtegory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCtegory.FormattingEnabled = true;
-            this.cbCtegory.Items.AddRange(new object[] {
-            "Cake",
-            "Donuts",
-            "Soft Drink",
-            "Smoothies",
-            "Coffee"});
             this.cbCtegory.Location = new System.Drawing.Point(209, 148);
             this.cbCtegory.Name = "cbCtegory";
             this.cbCtegory.Size = new System.Drawing.Size(266, 28);

@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using vp_assignment.DAL;
+using vp_assignment.Entity;
 
 namespace vp_assignment
 {
     public partial class AddItems : Form
     {
-        
-
         public AddItems()
         {
             InitializeComponent();
@@ -56,6 +57,8 @@ namespace vp_assignment
             this.Hide();
             frm.ShowDialog();
         }
+        Items current = new Items();
+            
 
         private void AddItems_Load(object sender, EventArgs e)
         {
